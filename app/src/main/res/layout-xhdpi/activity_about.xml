@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="br.com.ufpb.nowpersonal.activities.AboutActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_help"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/md_amber_500"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/ic_app"/>
+
+            <br.com.ufpb.nowpersonal.util.CaviarDreamsFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontsize_title"
+                android:layout_marginTop="@dimen/default_margin"
+                android:textColor="@color/md_text"
+                android:gravity="center"
+                android:text="@string/app_name"/>
+
+            <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontsize_body_1"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textColor="@color/md_secondary_text_icons"
+                android:gravity="center"
+                android:text="Version 1.0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_text"
+                android:textSize="@dimen/fontsize_subhead"
+                android:gravity="start"
+                android:text="Desenvolvido para a disicplina Engenharia de Software Aplicada"/>
+
+            <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_grey_400"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textSize="@dimen/fontsize_body_1"
+                android:gravity="start"
+                android:text="Equipe:"/>
+
+            <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/md_secondary_text_icons"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textSize="@dimen/fontsize_subhead"
+                android:gravity="start"
+                android:text="@string/nomedaequipe"/>
+
+            <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_secondary_text_icons"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textSize="@dimen/fontsize_caption"
+                android:layout_gravity="bottom|center"
+                android:gravity="start"
+                android:text="Designed by Raphael Salviano"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

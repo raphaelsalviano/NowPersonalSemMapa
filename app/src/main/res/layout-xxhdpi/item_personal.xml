@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/default_margin"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_people"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_title"
+        android:textColor="@color/md_text"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/nomePersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/telefonePersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/emailPersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/localPersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/enderecoPersonalPersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/bairroPersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/precoPersonalPersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/horariosPersonalitem"/>
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize_subhead"
+        android:textColor="@color/md_secondary_text_icons"
+        android:text="AAAA"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/min_max_margin"
+        android:id="@+id/crefPersonalitem"/>
+
+</LinearLayout>

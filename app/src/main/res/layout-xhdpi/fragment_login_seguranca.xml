@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        android:scrollbars="none|vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/default_margin">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_ico_splash"
+                    android:src="@drawable/home_header_sub1" />
+
+                <br.com.ufpb.nowpersonal.util.RobotoRegularFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/text_description_subsettigns"
+                    android:textColor="@color/md_text"
+                    android:textSize="@dimen/fontsize_title" />
+
+            </LinearLayout>
+
+            <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sua senha e seu código PIN protegem sua conta. Você pode alterar sua senha ou seu código PIN aqui."
+                android:textColor="@color/md_secondary_text_icons"
+                android:textSize="@dimen/fontsize_subhead" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                card_view:cardBackgroundColor="@color/md_white_1000"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/alterarsenha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <br.com.ufpb.nowpersonal.util.RobotoRegularFont
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackground"
+                            android:gravity="start|center"
+                            android:padding="8dp"
+                            android:text="Alterar senha"
+                            android:textColor="@color/md_text"
+                            android:textSize="@dimen/fontsize_title" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_chevron_down" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/default_margin"
+                        android:id="@+id/container_alterar_senha"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/layout_new_senha"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:maxEms="16"
+                                android:inputType="textEmailAddress"
+                                android:hint="Nova senha"
+                                android:id="@+id/new_senha"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/layout_confirmar_senha"
+                            android:layout_marginTop="@dimen/min_margin"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:minEms="4"
+                                android:maxEms="16"
+                                android:inputType="textPassword"
+                                android:hint="Confirmar nova senha"
+                                android:id="@+id/confirmed_senha"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/size_button_height"
+                            android:background="@drawable/raised_button_amber"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:text="Alterar senha"
+                            android:textAllCaps="true"
+                            android:id="@+id/btn_loginseguranca"
+                            android:padding="@dimen/min_margin"
+                            android:textColor="@color/md_text"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                card_view:cardBackgroundColor="@color/md_white_1000"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/alterarpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <br.com.ufpb.nowpersonal.util.RobotoRegularFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="start|center"
+                        android:padding="8dp"
+                        android:text="Alterar PIN"
+                        android:textColor="@color/md_text"
+                        android:textSize="@dimen/fontsize_title" />
+
+                    <br.com.ufpb.nowpersonal.util.RobotoRegularFont
+                        android:id="@+id/newPin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="end|center"
+                        android:padding="8dp"
+                        android:text="PIN:"
+                        android:textColor="@color/md_secondary_text_icons"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/removerViewConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                card_view:cardBackgroundColor="@color/md_white_1000"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/removerConta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <br.com.ufpb.nowpersonal.util.RobotoRegularFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="start|center"
+                        android:padding="8dp"
+                        android:text="Remover conta"
+                        android:textColor="@color/md_red_500"
+                        android:textSize="@dimen/fontsize_title" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_click"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="@dimen/default_margin"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="@dimen/min_margin"
+        android:src="@drawable/marker_personal"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:orientation="vertical">
+
+        <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_subhead"
+            android:textColor="@color/md_text"
+            android:id="@+id/nomePersonal"
+            android:text="AAAAA"/>
+
+        <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_body_1"
+            android:textColor="@color/md_secondary_text_icons"
+            android:id="@+id/enderecoPersonal"
+            android:text="AAAAA"/>
+
+        <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_body_1"
+            android:textColor="@color/md_secondary_text_icons"
+            android:id="@+id/precoPersonal"
+            android:text="AAAAA"/>
+
+    </LinearLayout>
+
+</LinearLayout>
